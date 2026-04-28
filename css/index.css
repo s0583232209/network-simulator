@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Agbalumo;
+    src: url('../fonts/Agbalumo/Agbalumo-Regular.ttf');
+}
+
+@font-face {
+    font-family: ABeeZee;
+    src: url('../fonts/ABeeZee-Regular.ttf')
+}
+
+@font-face {
+    font-family: Charm;
+    src: url('../fonts/Charm/Charm-Bold.ttf')
+}
+
+* {
+    font-family: 'ABeeZee';
+}
+
+mail-server {
+    order: 1;
+}
+
+#none,
+.none {
+    display: none;
+}
+
+
+mail-client {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    background-image: url('../media/images/background_envelope.png');
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: repeat-y;
+}
+
+.background-color {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.clients {
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: 20%;
+    grid-template-rows: fit-content;
+    grid-area: 1/1/2/2;
+}
+
+main {
+    grid-area: 1/1/3/2;
+    width: 100%;
+}
+
+.messages_main {
+    grid-column: 1 / 3;
+
+}
+
+#storage_server_side {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.outer_section_server {
+
+    word-wrap: break-word;
+    font-size: 70px;
+    text-align: center;
+    height: 100%;
+    padding: 37%;
+    background-color: rgb(255, 251, 4);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+#button_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+button,
+input,
+form {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button {
+    background-color: #FF8C00;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #FF6F00;
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+}
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+input {
+    width: 250px;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #888;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #FF8C00;
+    outline: none;
+}
+
+#send_to_all {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#send_to_all:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+#send_to_all:focus {
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+}
+
+#scheduled_message {
+    background-color: #009688;
+    color: white;
+}
+
+#scheduled_message:hover {
+    background-color: #00796B;
+}
+
+#scheduled_message:focus {
+    box-shadow: 0 0 10px rgba(0, 150, 136, 0.7);
+}
+
+#create_client {
+    background-color: #FF5722;
+    color: white;
+}
+
+#create_client:hover {
+    background-color: #E64A19;
+}
+
+#create_client:focus {
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+}
