@@ -1,4 +1,4 @@
-# Mail Network Simulator
+# Mail Network Simulator (Grad: 99%)
 
 A zero-dependency, browser-native simulation of a client/server mail (packet-delivery) network, built entirely with vanilla **JavaScript (ES Modules + Web Components)**, **HTML**, and **CSS** — no frameworks, no bundler, no build step.
 
