@@ -13,7 +13,7 @@ function create_cable() {
 }
 
 const template_client = document.createElement('template')
-template_client.innerHTML = `<link href='../css/elements.css' rel='stylesheet'>
+template_client.innerHTML = `<link href='./css/elements.css' rel='stylesheet'>
 <div class='client'>
 <button type='button' id='view_messages' class='new_messages'></button>
 

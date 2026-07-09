@@ -1,6 +1,6 @@
 export { message } from './client_text.js'
 const template_storage = document.createElement('template')
-template_storage.innerHTML = `<link href='../css/elements.css' rel='stylesheet'><div class='storage'></div>`
+template_storage.innerHTML = `<link href='./css/elements.css' rel='stylesheet'><div class='storage'></div>`
 export class Storage extends HTMLElement {
     constructor() {
         history.pushState({ name: 'messages' }, 'messages', '#messages')

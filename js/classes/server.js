@@ -1,6 +1,6 @@
 import { message } from './client_text.js'
 const template_server = document.createElement('template')
-template_server.innerHTML = `<link href='../css/elements.css' rel='stylesheet'><div id='server'><slot></slot><mail-storage></mail-storage></div>`
+template_server.innerHTML = `<link href='css/elements.css' rel='stylesheet'><div id='server'><slot></slot><mail-storage></mail-storage></div>`
 export class Server extends HTMLElement {
     constructor() {
         super()
